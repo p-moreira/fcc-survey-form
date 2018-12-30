@@ -24,6 +24,11 @@ body {
     font-weight: 100;
 }
 
+.description {
+  max-width: 600px;
+  line-height: 32px;
+}
+
 .form {
     width: 100%;
 }
@@ -90,6 +95,10 @@ body {
     text-align: left;
 }
 
+.design {
+    grid-template-columns: 36px 120px auto;
+}
+
 .radio,
 .checkbox {
     width: 24px;
@@ -110,6 +119,10 @@ body {
     border-radius: 10px
 }
 
+.required {
+  border-left: 3px solid red;
+}
+
 @media (min-width: 768px) {
     .container {
         display: grid;
@@ -128,13 +141,8 @@ body {
         justify-self: end;
         text-align: right;
     }
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: end;
-    }
+    
     .button {
-        justify-self: end;
         width: 100px;
     }
 

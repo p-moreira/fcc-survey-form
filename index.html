@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./index.css">
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <title>Freecodecamp.org Survey Form Chalenge</title>
 </head>
 <body>
     <main class="container">
-        <h1 id="title" class="title">Survey Form</h1>
-        <p id="description" class="description">Please, tell us about your preferences</p>
+        <h1 id="title" class="title">We need your help!</h1>
+        <img src="https://i.ibb.co/4MTWzMh/form-top-image.png" alt="feedback illustration">
+        <p id="description" class="description">zOOngo is a platform to produce professional content. Please, let us know what do you think about our new website. Take a look at: <a href="https://zoongo.io">zoongo.io</a></p>
         <form id="survey-form" action="" class="form">
             <ul class="fields">
                 <li class="field">
                     <label for="name" class="label" id="name-label">First Name</label>
-                    <input type="text" id="name" class="input" placeholder="your first name" required>
+                    <input type="text" id="name" class="input required" placeholder="your first name" required>
                 </li>
                 <li class="field">
                     <label for="last-name" class="label" id="last-name-label">Last Name</label>
-                    <input type="text" id="last-name" class="input" placeholder="your last name" required>
+                    <input type="text" id="last-name" class="input required" placeholder="your last name" required>
                 </li>
                 <li class="field">
                     <label for="email" class="label" id="email-label">E-mail</label>
-                    <input type="email" id="email" class="input" placeholder="your e-mail" required>
+                    <input type="email" id="email" class="input required" placeholder="your e-mail" required>
                 </li>
                 <li class="field">
                     <label for="number" class="label" id="number-label">Age</label>
-                    <input type="number" id="number" class="input" placeholder="your age">
+                    <input type="number" id="number" class="input" placeholder="your age" min="6" max="120">
                 </li>
                 <li class="field">
                     <label for="dropdown" class="label" id="dropdown-label">What's your ocupation?</label>
@@ -41,25 +42,30 @@
                     </select>
                 </li>
                 <li class="field">
-                    <label for="free-time" class="label" id="free-time-label">What do you do in your free time?</label>
-                    <div class="group">
-                        <input type="radio" name="free-time" value="cine" id="cine" checked class="radio">
-                        <span>Cine</span>
-                        <input type="radio" name="free-time" value="dinner" id="dinner" class="radio">
-                        <span>Dinner</span> 
-                        <input type="radio" name="free-time" value="other" id="other" class="radio">
-                        <span>Other</span>
+                    <label for="design" class="label" id="design-label">What do you think about the zOOngo's website design?</label>
+                    <div class="group design" id="design">
+                        <input type="radio" name="design" value="bad" id="bad"  class="radio">
+                        <span>Bad</span>
+                        <img src="https://i.ibb.co/xsd6P1t/icon-bad.png" alt="icon-bad" width="32" height="32">
+                        <input type="radio" name="design" value="good" id="good" class="radio">
+                        <span>Good</span> 
+                        <img src="https://i.ibb.co/86HHXX6/icon-good.png" alt="icon-bad" width="32" height="32">
+                        <input type="radio" name="design" value="verygood" id="verygood" class="radio" checked>
+                        <span>Very good</span>
+                        <img src="https://i.ibb.co/Q9BmwLV/icon-very-good.png" alt="icon-bad" width="32" height="32">
                     </div>
                 </li>
                 <li class="field">
-                    <label for="technologies" class="label" id="technologies-label">What technologies do you like?</label>
-                    <div class="group">
-                        <input type="checkbox" name="technologies" value="html" id="html" checked class="checkbox">
-                        <span>Html</span>
-                        <input type="checkbox" name="technologies" value="css" id="css" class="checkbox">
-                        <span>CSS</span> 
-                        <input type="checkbox" name="technologies" value="javascript" id="javascript" class="checkbox">
-                        <span>Javascript</span>
+                    <label for="technologies" class="label" id="technologies-label">What we need to improve?</label>
+                    <div class="group" id="technologies">
+                        <input type="checkbox" name="technologies" value="brand" id="brand" class="checkbox">
+                        <span>Brand</span>
+                        <input type="checkbox" name="technologies" value="colors" id="colors" class="checkbox">
+                        <span>Colors</span> 
+                        <input type="checkbox" name="technologies" value="typography" id="typography" class="checkbox">
+                        <span>Typography</span>
+                        <input type="checkbox" name="technologies" value="general" id="general" class="checkbox">
+                        <span>General design</span>
                     </div>
                 </li>
                 <li class="field">
@@ -67,7 +73,8 @@
                     <textarea name="message" id="message" class="textarea" rows="5" placeholder="your message"></textarea>
                 </li>
                 <li class="field footer">
-                    <button class="button">Submit</button>
+                    <label></label>
+                    <button class="button" id="submit">Submit</button>
                 </li>
             </ul>
         </form>
