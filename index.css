@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,700,900');
 :root {
     --default-font-size: 18px;
     --default-font-family: '"Roboto", sans-serif';
@@ -47,12 +47,14 @@ body {
     display: block;
     text-align: left;
     margin: 10px 0 10px;
+    font-weight: 700;
+    color: #00252Eaa;
 }
 
 .input,
 .select,
 .textarea {
-    border: 1px solid #E3E3E3;
+    border: 1px solid #ccc;
     width: 100%;
     font-size: var(--dafault-font-size, 18px);
     font-family: var(--dafault-font-family, 'Roboto', sans-serif);
@@ -78,7 +80,7 @@ body {
 }
 
 ::placeholder {
-    color: #D6D5D6;
+    color: #ccc;
     font-family: var(--dafault-font-family, 'Roboto', sans-serif);
     font-weight: 100;
 }
