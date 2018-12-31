@@ -9,7 +9,7 @@ body {
     border: 0;
     font-family: var(--dafault-font-family, 'Roboto', sans-serif);
     font-size: var(--dafault-font-size, 18px);
-    font-weight: 100;
+    font-weight: 300;
     color: #00252E;
     text-align: center;
 }
@@ -58,7 +58,7 @@ body {
     width: 100%;
     font-size: var(--dafault-font-size, 18px);
     font-family: var(--dafault-font-family, 'Roboto', sans-serif);
-    font-weight: 100;
+    font-weight: 300;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 10px;
@@ -80,9 +80,9 @@ body {
 }
 
 ::placeholder {
-    color: #ccc;
+    color: #bbb;
     font-family: var(--dafault-font-family, 'Roboto', sans-serif);
-    font-weight: 100;
+    font-weight: 300;
 }
 
 .group {
@@ -117,7 +117,7 @@ body {
     box-sizing: border-box;
     color: #fff;
     font-size: var(--dafault-font-size, 18px);
-    font-weight: 100;
+    font-weight: 300;
     border-radius: 10px
 }
 
